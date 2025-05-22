@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丹佛訊息 - 佛光普照</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+    <!-- 自訂 CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <i class="fas fa-dharmachakra me-2"></i>佛光普照
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/m1_about_us/m1_about_us.html">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/m2_denver_activity/m2_denver_activity.html">丹佛訊息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/m3_sutra/m3_sutra.html">法音宣流</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/m4_donate/m4_donate.html">發心護持</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 頁面標題 -->
+    <div class="page-header">
+        <div class="container">
+            <h1>丹佛訊息</h1>
+            <p class="lead">最新活動、法會資訊與寺院公告</p>
+        </div>
+    </div>
+
+    <!-- 最新公告 -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">最新公告</h2>
+            <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading"><i class="fas fa-bell me-2"></i>端午節法會通知</h4>
+                <p>本寺將於6月10日(農曆五月初五)舉行端午節祈福法會，歡迎十方信眾踴躍參加。</p>
+                <hr>
+                <p class="mb-0">法會時間：上午9:00-12:00，請提前報名。</p>
+            </div>
+            <div class="alert alert-info" role="alert">
+                <h4 class="alert-heading"><i class="fas fa-info-circle me-2"></i>寺院整修通知</h4>
+                <p>本寺大殿將於7月15日至7月20日進行整修工程，期間暫停開放。造成不便，敬請見諒。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 近期活動 -->
+    <section class="content-section bg-light" id="events">
+        <div class="container">
+            <h2 class="section-title">近期活動</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4" id="event1">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/bathing_buddha.jpg" alt="浴佛法會" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="event-date mb-2">
+                                        <div>6月15日</div>
+                                        <div>週六 09:00-12:00</div>
+                                    </div>
+                                    <h5 class="card-title">浴佛法會</h5>
+                                    <p class="card-text">慶祝佛誕節，舉行莊嚴浴佛儀式，共修功德。法會將由常智法師主法，設有三時繫念、浴佛儀式與祈福迴向。</p>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventModal1">
+                                        活動詳情
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" id="event2">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/sutra_study.jpg" alt="金剛經共修" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="event-date mb-2">
+                                        <div>每週日</div>
+                                        <div>14:00-16:00</div>
+                                    </div>
+                                    <h5 class="card-title">《金剛經》共修</h5>
+                                    <p class="card-text">每週日下午定期共修《金剛經》，由常智法師帶領讀誦與講解，歡迎大眾參與。適合初學者與進階修行者。</p>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventModal2">
+                                        活動詳情
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" id="event3">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/meditation_retreat.jpg" alt="禪修營" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="event-date mb-2">
+                                        <div>7月1-7日</div>
+                                        <div>全天</div>
+                                    </div>
+                                    <h5 class="card-title">夏季禪修營</h5>
+                                    <p class="card-text">為期七天的密集禪修，由資深法師指導，包含坐禪、行禪、佛法開示等。名額有限，請提前報名。</p>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventModal3">
+                                        活動詳情
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/charity_event.jpg" alt="慈善活動" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <div class="event-date mb-2">
+                                        <div>8月8日</div>
+                                        <div>週四 10:00-16:00</div>
+                                    </div>
+                                    <h5 class="card-title">慈善義賣活動</h5>
+                                    <p class="card-text">本寺將舉辦年度慈善義賣活動，所得款項將用於資助弱勢家庭學童教育。歡迎大眾共襄盛舉。</p>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eventModal4">
+                                        活動詳情
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定期課程 -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">定期課程</h2>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>課程名稱</th>
+                            <th>時間</th>
+                            <th>地點</th>
+                            <th>指導法師</th>
+                            <th>適合對象</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>初級禪修班</td>
+                            <td>每週二 19:00-21:00</td>
+                            <td>禪堂</td>
+                            <td>常智法師</td>
+                            <td>初學者</td>
+                        </tr>
+                        <tr>
+                            <td>《心經》導讀</td>
+                            <td>每週四 19:00-21:00</td>
+                            <td>講堂</td>
+                            <td>常慧法師</td>
+                            <td>所有人</td>
+                        </tr>
+                        <tr>
+                            <td>佛學基礎班</td>
+                            <td>每週六 14:00-16:00</td>
+                            <td>講堂</td>
+                            <td>常德法師</td>
+                            <td>初學者</td>
+                        </tr>
+                        <tr>
+                            <td>梵唄練習</td>
+                            <td>每週日 10:00-12:00</td>
+                            <td>大殿</td>
+                            <td>常音法師</td>
+                            <td>所有人</td>
+                        </tr>
+                        <tr>
+                            <td>高級禪修班</td>
+                            <td>每週三 19:00-21:00</td>
+                            <td>禪堂</td>
+                            <td>常智法師</td>
+                            <td>有禪修基礎者</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">課程報名</a>
+                <a href="#" class="btn btn-outline-secondary ms-2">課程表下載</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動回顧 -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <h2 class="section-title">活動回顧</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/past_event1.jpg" class="card-img-top" alt="過去活動照片">
+                        <div class="card-body">
+                            <h5 class="card-title">2025年春季浴佛法會</h5>
+                            <p class="card-text">今年春季浴佛法會圓滿舉行，近千名信眾參與盛會，共同慶祝佛陀誕辰。</p>
+                            <p class="text-muted"><small>2025年4月8日</small></p>
+                            <a href="#" class="btn btn-outline-primary">查看更多照片</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/past_event2.jpg" class="card-img-top" alt="過去活動照片">
+                        <div class="card-body">
+                            <h5 class="card-title">冬季禪七圓滿</h5>
+                            <p class="card-text">為期七天的冬季禪七活動圓滿結束，參與者在靜中體悟，收穫豐富的修行經驗。</p>
+                            <p class="text-muted"><small>2025年1月15日</small></p>
+                            <a href="#" class="btn btn-outline-primary">查看更多照片</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-secondary">查看更多活動回顧</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活動詳情模態框 -->
+    <div class="modal fade" id="eventModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">浴佛法會詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/bathing_buddha.jpg" alt="浴佛法會" class="img-fluid mb-3">
+                    <h4>活動時間</h4>
+                    <p>2025年6月15日（週六）上午9:00-12:00</p>
+                    <h4>活動地點</h4>
+                    <p>佛光普照寺大雄寶殿</p>
+                    <h4>活動內容</h4>
+                    <ul>
+                        <li>09:00-09:30 集合、念誦《心經》</li>
+                        <li>09:30-10:30 三時繫念</li>
+                        <li>10:30-11:30 浴佛儀式</li>
+                        <li>11:30-12:00 法師開示、祈福迴向</li>
+                    </ul>
+                    <h4>報名方式</h4>
+                    <p>請於6月10日前至寺院櫃檯報名，或透過電話、電子郵件報名。</p>
+                    <h4>注意事項</h4>
+                    <p>請穿著樸素整齊服裝，建議提前30分鐘到達會場。</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary">立即報名</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 其他活動模態框（類似結構，省略詳細內容） -->
+    <div class="modal fade" id="eventModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">《金剛經》共修詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 內容省略 -->
+                    <p>《金剛經》共修詳細內容...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary">立即報名</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eventModal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">夏季禪修營詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 內容省略 -->
+                    <p>夏季禪修營詳細內容...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-primary">立即報名</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="eventModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">慈善義賣活動詳情</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 內容省略 -->
+                    <p>慈善義賣活動詳細內容...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="bt
+(Content truncated due to size limit. Use line ranges to read in chunks)
